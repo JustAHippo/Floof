@@ -25,7 +25,7 @@ droptime = time.mktime(
 print(droptime)
 async def main():
     headers={"Content-type": "application/json", "Authorization": "Bearer " + bearer}
-    json={"profileName": "how"}
+    json={"profileName": name}
     async with aiohttp.ClientSession(headers=headers) as session:
         async with session.post("https://api.minecraftservices.com/minecraft/profile", json=json) as r:
             #json_body = await r.json()
