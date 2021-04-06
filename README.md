@@ -7,8 +7,10 @@ I thought if I quit, I'd go out with a bang.
 
 By bang, I mean like publicly releasing my GC sniper.
 
-Gathering opinions and stuff. Might abandon the release altogether, but the sniper is done.
-
 The project will be in no way maintained, updated, or changed on my development beacuse I do not care about it.
 
-Feel free to fork or whatever if I ever put it up.
+Skid the code by all means necessary. I don't really care too much just don't sell the free sniper <3
+
+Edited the ReadME.MD because I actually released it
+
+"Welcome home, Theseus!"
