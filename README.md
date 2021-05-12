@@ -1,16 +1,12 @@
 # Floof
-The first public GC sniper(that was intended to be public lol)
+Heyo it's Drowzee
 
-So I'm Drowzee, and I quit sniping community.
+Might update this if I get bored sometimes...
 
-I thought if I quit, I'd go out with a bang. 
+For right now, Multi Bearer is here! Hooray!
 
-By bang, I mean like publicly releasing my GC sniper.
+Just put each bearer on a different line and the program will do that
 
-The project will be in no way maintained, updated, or changed on my development beacuse I do not care about it.
+6 bearers per IP max
 
-Skid the code by all means necessary. I don't really care too much just don't sell the free sniper <3
-
-Edited the ReadME.MD because I actually released it
-
-"Welcome home, Theseus!"
+Goodbye for now ;)
