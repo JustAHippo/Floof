@@ -16,7 +16,7 @@ thetitle = f"""███████╗██╗░░░░░░████�
 print(thetitle)
 othertext = f"""(╯°o°)╯ Multi-Bearer Edition!"""
 print(othertext)
-print('Made By a Hippo')
+print('Made By a Hippo and Dog')
 name = input("Name: ")
 delay = int(input("Delay: "))
 try:
