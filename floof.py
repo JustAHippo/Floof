@@ -39,6 +39,8 @@ def runRequest(line):
     jsn     = {"profileName": name}
     jsn     = json.dumps(jsn)
     conn    = http.client.HTTPSConnection("api.minecraftservices.com")
+    conn.request("GET", "/")
+    conn.getresponse().read()
     e.wait()
     conn.request("POST", "/minecraft/profile", jsn, headers)
     response = conn.getresponse()
