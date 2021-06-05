@@ -20,19 +20,14 @@ print('Made By a Hippo and Dog')
 name = input("Name: ")
 delay = int(input("Delay: "))
 try:
-    jj = requests.get(f'https://api.nathan.cx/check/{name}').json()
+    jj = requests.get(f'https://mojang-api.teun.lol/droptime/{name}').json()
 except Exception:
     print("Unexpected Error")
     exit()
-
-if not jj.get('drop_time'):
-    if jj.get('status') and jj['status'] == 'taken':
-        print("Error, name taken")
-    print("Unexpected Error")
-    exit()
-
-droptime = isoparse(jj['drop_time']).timestamp()
+droptime = jj['UNIX']
+print(droptime)
 e = threading.Event()
+
 
 def runRequest(line):
     headers = {"Accept": "application/json", "Authorization": "Bearer " + line}
@@ -44,9 +39,9 @@ def runRequest(line):
     e.wait()
     conn.request("POST", "/minecraft/profile", jsn, headers)
     response = conn.getresponse()
-    print("Got answer at", time.time())
-    print(response.status, response.reason)
-    print(response.read().decode())
+    print("Got answer at", time.time(), "with response", response.status)
+    #print(response.status, response.reason)
+    #print(response.read().decode())
 
 if droptime + - time.time() > 60:
     print('Sniping ' + name + ' in ' + str(round((droptime + - time.time()) / 60 )) + ' minutes!')
