@@ -20,7 +20,7 @@ print('Made By a Hippo and Dog')
 name = input("Name: ")
 delay = int(input("Delay: "))
 try:
-    jj = requests.get(f'https://mojang-api.teun.lol/droptime/{name}').json()
+    jj = requests.get(f'http://api.coolkidmacho.com/droptime/{name}').json()
 except Exception:
     print("Unexpected Error")
     exit()
